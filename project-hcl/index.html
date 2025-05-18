@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Flashcard System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Flashcard System</h1>
+
+    <input type="text" id="studentId" placeholder="Enter Student ID">
+
+    <textarea id="question" placeholder="Enter question"></textarea>
+    <textarea id="answer" placeholder="Enter answer"></textarea>
+    <button onclick="addFlashcard()">Add Flashcard</button>
+
+    <hr>
+
+    <input type="number" id="limit" placeholder="Number of flashcards" value="5" min="1">
+    <button onclick="getMixedFlashcards()">Get Mixed Flashcards</button>
+
+    <div id="flashcardList" class="flashcard-container"></div>
+  </div>
+
+  <script src="p.js"></script>
+</body>
+</html>
